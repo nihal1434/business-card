@@ -1,3 +1,8 @@
+
+@font-face{
+    src:url("Alvcidon-Condensed.otf");
+    font-family: peeky;
+}
 body {
     margin: 20px;
     /*
@@ -5,7 +10,7 @@ body {
     Find a web safe font you like, and add it 
     to your card.
     */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:peeky;
 }
 
 .avatar {
