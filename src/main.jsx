@@ -12,16 +12,18 @@ root.render(
 function Info() {
   return (
     <>
-      <img src="images/profilepic.jpg" width="317px" />
+    <header>
+      <img src="images/profilepic.jpg" />
       <div className="information">
         <h1>Mohammad Nihal</h1>
-        <p>Frontend Developer</p>
-        <p>nihalonly772@gmail.com</p>
+        <p id="job">Frontend Developer</p>
+        <p id="email">nihalonly772@gmail.com</p>
         <div className="btn">
-          <button>Email</button>
-          <button>LinkedIn</button>
+          <button id="ebtn"><i class="fa-solid fa-envelope icon"></i> Email</button>
+          <button id="libtn"> <i class="fa-brands fa-linkedin icon"></i> LinkedIn</button>
         </div>
       </div>
+    </header>
     </>
   )
 }
@@ -38,7 +40,7 @@ function About() {
 function Interests() {
   return (
     <>
-      <h2>Interests</h2>
+      <h2 id="interests">Interests</h2>
       <p>Problem solver. Tech enthusiast. UI/UX learner. Reader. Coffee lover. Curious thinker.</p>
     </>
   )
