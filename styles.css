@@ -1,4 +1,5 @@
-*,html,
+*,
+html,
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +9,10 @@ body {
 body {
     background-color: #23252C;
     font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 img {
@@ -17,67 +22,120 @@ img {
     max-width: 100%;
     height: auto;
 }
-.information{
-    padding:1em 2em 0 2em;
+
+.information {
+    padding: 1em 2em 0 2em;
 }
+
 #root {
     background-color: #1A1B21;
     width: 19.8125em;
     height: 48.75em;
     text-align: center;
 }
-header h1{
+
+header h1 {
     font-weight: 700;
     font-size: 1.5625rem;
     color: #FFFFFF;
 }
-header #job{
+
+header #job {
     color: #F3BF99;
     font-size: .8rem;
     padding: 6px 0 6px 0;
 }
-header #email{
+
+header #email {
     color: #F5F5F5;
     font-size: .64rem;
     padding-bottom: 15px;
 }
-main{
+
+main {
     text-align: start;
     padding: 2em;
 }
-main h2{
+
+main h2 {
     font-size: 1rem;
     color: #F5F5F5;
     font-weight: 700;
     margin-bottom: 5px;
 }
-#interests{
+
+#interests {
     margin-top: 1.5rem;
 }
-main p{
+
+main p {
     font-size: .64rem;
     color: #DCDCDC;
     line-height: 150%;
 }
-button{
+
+button {
     width: 7.1875rem;
     height: 2.125rem;
     border-radius: 6px;
     border: none;
     font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background 0.2s ease;
 }
-.btn{
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btn {
     display: flex;
     justify-content: space-between;
 }
-#libtn{
-    background-color: #5093E2;
+
+#libtn {
+    background-color: #3675bd;
     color: #FFFFFF;
 }
-#ebtn{
+
+#libtn:active {
+    background-color: #5093E2;
+}
+
+#ebtn {
     background-color: #FFFFFF;
     color: #374151;
 }
-.icon{
+
+#ebtn:active {
+    background-color: #e6e1e1;
+}
+
+.icon {
     padding-right: 4px;
+}
+
+footer {
+    background-color: #161619;
+    height: 4rem;
+    padding: 0 2rem 0 2rem;
+}
+
+#social-icons {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sicon {
+    font-size: 1.55rem;
+    color: #918E9B;
+    transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.sicon:active {
+    transform: scale(0.95);
+    color: #a6a3af;
 }

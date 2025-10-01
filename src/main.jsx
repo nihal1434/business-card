@@ -7,6 +7,9 @@ root.render(
       <About />
       <Interests />
     </main>
+    <footer>
+      <Footer />
+    </footer>
   </>
 )
 function Info() {
@@ -33,6 +36,18 @@ function About() {
     <>
       <h2>About</h2>
       <p>I am a 3rd year CSE student at NIT Srinagar with a focus on frontend development. I enjoy building clean, user-friendly interfaces and also explore Java, Python, and DSA to strengthen my problem-solving skills. Always eager to learn, I aim to create projects that combine simplicity and impact</p>
+    </>
+  )
+}
+
+function Footer() {
+  return (
+    <><div id="social-icons"> 
+      <i class="fa-brands fa-twitter sicon"></i>
+      <i class="fa-brands fa-square-facebook sicon"></i>
+      <i class="fa-brands fa-square-instagram sicon"></i>
+      <i class="fa-brands fa-square-github  sicon"></i>
+      </div>
     </>
   )
 }
