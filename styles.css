@@ -16,80 +16,87 @@ body {
 }
 
 img {
-    font-size: 1rem;
-    width: 19.8125em;
-    height: 19.8125em;
-    max-width: 100%;
-    height: auto;
+    max-width: 430px;
+    max-height: 420px;
+    width: 100%;
+    height: 100%;
 }
 
 .information {
-    padding: 1em 2em 0 2em;
+    padding: 1.5em  ;
+    padding-bottom: 0;
 }
 
 #root {
-    background-color: #1A1B21;
-    width: 19.8125em;
-    height: 48.75em;
-    text-align: center;
+    /* background-color: #e31f1f; */
+    height: 100%;
+    width: 100%;
 }
 
 header h1 {
     font-weight: 700;
-    font-size: 1.5625rem;
+    font-size: 1.75rem;
+    letter-spacing: .9px;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
 header #job {
     color: #F3BF99;
-    font-size: .8rem;
-    padding: 6px 0 6px 0;
+    font-size: 1.1rem;
+    padding: 5px 0 6px 0;
 }
 
 header #email {
-    color: #F5F5F5;
-    font-size: .64rem;
-    padding-bottom: 15px;
+    color: #cecbcb;
+    font-size: .95rem;
+    padding-bottom: 20px;
+    cursor: pointer;
 }
-
-main {
-    text-align: start;
-    padding: 2em;
-}
-
-main h2 {
-    font-size: 1rem;
-    color: #F5F5F5;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
 #interests {
     margin-top: 1.5rem;
 }
+main {
+    text-align: start;
+    padding: 1.5em;
+}
+
+main h2 {
+    font-size: 1.25rem;
+    color: #F5F5F5;
+    font-weight: 700;
+    letter-spacing: .3px;
+    margin-bottom: 7px;
+}
 
 main p {
-    font-size: .64rem;
     color: #DCDCDC;
     line-height: 150%;
+    letter-spacing: .25px;
 }
 
 button {
-    width: 7.1875rem;
-    height: 2.125rem;
-    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    min-width: 120px;
+    min-height: 40px;
+    border-radius: 5px;
     border: none;
-    font-size: 14px;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.1s ease, background 0.2s ease;
 }
-
+button i{
+    margin-right: 8px;
+    font-size: 1.25em;
+}
 button:active {
     transform: scale(0.95);
 }
 
 .btn {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
 }
 
@@ -111,14 +118,10 @@ button:active {
     background-color: #e6e1e1;
 }
 
-.icon {
-    padding-right: 4px;
-}
-
 footer {
     background-color: #161619;
     height: 4rem;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem;
 }
 
 #social-icons {
@@ -129,13 +132,32 @@ footer {
     cursor: pointer;
 }
 
+#social-icons a:focus {
+    outline: none; 
+}
+#social-icons {
+    -webkit-tap-highlight-color: transparent; 
+}
+
+#social-icons a {
+    text-decoration: none;
+    display: inline-flex;       
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#social-icons a:focus {
+    outline: none; 
+}
+
 .sicon {
-    font-size: 1.55rem;
+    font-size: 1.75rem;
     color: #918E9B;
-    transition: transform 0.1s ease, background 0.3s ease;
+    transition: transform 0.15s ease, color 0.2s ease;
 }
 
 .sicon:active {
-    transform: scale(0.95);
-    color: #a6a3af;
+    transform: scale(0.9);  
+    color: #c3c1c9;
 }

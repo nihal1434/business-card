@@ -22,8 +22,8 @@ function Info() {
         <p id="job">Frontend Developer</p>
         <p id="email">nihalonly772@gmail.com</p>
         <div className="btn">
-          <button id="ebtn"><i class="fa-solid fa-envelope icon"></i> Email</button>
-          <button id="libtn"> <i class="fa-brands fa-linkedin icon"></i> LinkedIn</button>
+          <button id="ebtn"><i className="fa-solid fa-envelope icon"></i> Email</button>
+          <button id="libtn"> <i className="fa-brands fa-linkedin icon"></i> LinkedIn</button>
         </div>
       </div>
     </header>
@@ -39,19 +39,6 @@ function About() {
     </>
   )
 }
-
-function Footer() {
-  return (
-    <><div id="social-icons"> 
-      <i class="fa-brands fa-twitter sicon"></i>
-      <i class="fa-brands fa-square-facebook sicon"></i>
-      <i class="fa-brands fa-square-instagram sicon"></i>
-      <i class="fa-brands fa-square-github  sicon"></i>
-      </div>
-    </>
-  )
-}
-
 function Interests() {
   return (
     <>
@@ -60,3 +47,24 @@ function Interests() {
     </>
   )
 }
+
+function Footer() {
+  return (
+    <><div id="social-icons">
+    <a href="https://twitter.com" target="_blank" rel="noreferrer">
+      <i className="fa-brands fa-twitter sicon"></i>
+    </a>
+    <a href="https://facebook.com" target="_blank" rel="noreferrer">
+      <i className="fa-brands fa-square-facebook sicon"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noreferrer">
+      <i className="fa-brands fa-square-instagram sicon"></i>
+    </a>
+    <a href="https://github.com/nihal1434" target="_blank" rel="noreferrer">
+      <i className="fa-brands fa-square-github sicon"></i>
+    </a>
+  </div>
+    </>
+  )
+}
+
