@@ -16,7 +16,7 @@ function Info() {
   return (
     <>
     <header>
-      <img src="/images/pro.jpg" />
+      <img src="/images/liteprofile.jpg" alt="profile image of Nihal"/>
       <div className="information">
         <h1>Mohammad Nihal</h1>
         <p id="job">Frontend Developer</p>
