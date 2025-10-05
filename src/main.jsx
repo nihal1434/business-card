@@ -15,18 +15,19 @@ root.render(
 function Info() {
   return (
     <>
-    <header>
-      <img src="/images/liteprofile.jpg" alt="profile image of Nihal"/>
-      <div className="information">
-        <h1>Mohammad Nihal</h1>
-        <p id="job">Frontend Developer</p>
-        <p id="email">nihalonly772@gmail.com</p>
-        <div className="btn">
-          <button id="ebtn"><i className="fa-solid fa-envelope icon"></i> Email</button>
-          <button id="libtn"> <i className="fa-brands fa-linkedin icon"></i> LinkedIn</button>
+      {/* <a href="mailto:youremail@example.com">Email Me</a> */}
+      <header>
+        <img src="/images/liteprofile.jpg" alt="profile image of Nihal" />
+        <div className="information">
+          <h1>Mohammad Nihal</h1>
+          <p id="job">Frontend Developer</p>
+          <p id="email">nihalonly772@gmail.com</p>
+          <div className="btn">
+            <a id="ebtn" className="alike-btn" href="mailto:nihalonly772@gmail.com" target="_blank"><i className="fa-solid fa-envelope icon"></i>Email Me</a>
+            <a id="libtn" className="alike-btn" href="https://www.linkedin.com/in/mohammad-nihal-519523289/" target="_blank"> <i className="fa-brands fa-linkedin icon"></i> LinkedIn</a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
     </>
   )
 }
@@ -51,19 +52,19 @@ function Interests() {
 function Footer() {
   return (
     <><div id="social-icons">
-    <a href="https://twitter.com" target="_blank" rel="noreferrer">
-      <i className="fa-brands fa-twitter sicon"></i>
-    </a>
-    <a href="https://facebook.com" target="_blank" rel="noreferrer">
-      <i className="fa-brands fa-square-facebook sicon"></i>
-    </a>
-    <a href="https://instagram.com" target="_blank" rel="noreferrer">
-      <i className="fa-brands fa-square-instagram sicon"></i>
-    </a>
-    <a href="https://github.com/nihal1434" target="_blank" rel="noreferrer">
-      <i className="fa-brands fa-square-github sicon"></i>
-    </a>
-  </div>
+      <a href="https://twitter.com" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-twitter sicon"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-square-facebook sicon"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-square-instagram sicon"></i>
+      </a>
+      <a href="https://github.com/nihal1434" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-square-github sicon"></i>
+      </a>
+    </div>
     </>
   )
 }

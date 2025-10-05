@@ -28,7 +28,6 @@ img {
 }
 
 #root {
-    /* background-color: #e31f1f; */
     height: 100%;
     width: 100%;
 }
@@ -75,7 +74,7 @@ main p {
     letter-spacing: .25px;
 }
 
-button {
+.alike-btn {
     width: 150px;
     height: 50px;
     min-width: 120px;
@@ -84,13 +83,17 @@ button {
     border: none;
     font-size: 1.1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     transition: transform 0.1s ease, background 0.2s ease;
 }
-button i{
+.alike-btn i{
     margin-right: 8px;
     font-size: 1.25em;
 }
-button:active {
+.alike-btn:active {
     transform: scale(0.95);
 }
 
