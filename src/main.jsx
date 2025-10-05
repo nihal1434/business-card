@@ -17,7 +17,9 @@ function Info() {
     <>
       {/* <a href="mailto:youremail@example.com">Email Me</a> */}
       <header>
-        <img src="/images/liteprofile.jpg" alt="profile image of Nihal" />
+        <div className="image">
+        <img src="/images/liteprofile.jpg" alt="profile image of Nihal" className="image" />
+        </div>
         <div className="information">
           <h1>Mohammad Nihal</h1>
           <p id="job">Frontend Developer</p>

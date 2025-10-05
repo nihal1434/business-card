@@ -13,11 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+
 }
 
 img {
-    max-width: 430px;
-    max-height: 420px;
+    max-width: 450px;
+    max-height: 450px;
     width: 100%;
     height: 100%;
 }
@@ -26,6 +28,7 @@ img {
     padding: 1.5em  ;
     padding-bottom: 0;
 }
+
 
 #root {
     height: 100%;
@@ -100,6 +103,7 @@ main p {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    margin: 0 .25em;
 }
 
 #libtn {
@@ -123,7 +127,7 @@ main p {
 footer {
     background-color: #161619;
     height: 4rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
 
 #social-icons {
@@ -162,4 +166,36 @@ footer {
 .sicon:active {
     transform: scale(0.9);  
     color: #c3c1c9;
+}
+@media(min-width:500px){
+    body{
+        /* background-color: red; */
+    }
+    #root{
+    max-width: 450px;
+    }
+    .information {
+    padding: 0  ;
+    padding-top: 1.5em;
+    }
+    main {
+    text-align: start;
+    padding: 1.5em 0;
+    /* background-color: red; */
+    }
+
+    footer {
+    padding: 0em;
+    }
+    .btn {
+    display: flex;
+    gap: 1.5em;
+    }
+    
+    .alike-btn {
+    width: 200px;
+    height: 50px;
+    min-width: 120px;
+    min-height: 40px;
+    }
 }
