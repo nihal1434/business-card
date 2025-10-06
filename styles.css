@@ -13,8 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-
 }
 
 img {
@@ -25,7 +23,7 @@ img {
 }
 
 .information {
-    padding: 1.5em  ;
+    padding: 1.5em;
     padding-bottom: 0;
 }
 
@@ -55,9 +53,11 @@ header #email {
     padding-bottom: 20px;
     cursor: pointer;
 }
+
 #interests {
     margin-top: 1.5rem;
 }
+
 main {
     text-align: start;
     padding: 1.5em;
@@ -91,10 +91,12 @@ main p {
     text-decoration: none;
     transition: transform 0.1s ease, background 0.2s ease;
 }
-.alike-btn i{
+
+.alike-btn i {
     margin-right: 8px;
     font-size: 1.2em;
 }
+
 .alike-btn:active {
     transform: scale(0.95);
 }
@@ -139,22 +141,23 @@ footer {
 }
 
 #social-icons a:focus {
-    outline: none; 
+    outline: none;
 }
+
 #social-icons {
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
 }
 
 #social-icons a {
     text-decoration: none;
-    display: inline-flex;       
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 
 #social-icons a:focus {
-    outline: none; 
+    outline: none;
 }
 
 .sicon {
@@ -164,41 +167,133 @@ footer {
 }
 
 .sicon:active {
-    transform: scale(0.9);  
+    transform: scale(0.9);
     color: #c3c1c9;
 }
-@media(min-width:500px){
-    body{
+
+@media(min-width:500px) {
+    body {
         /* background-color: red; */
     }
-    #root{
-    max-width: 450px;
+
+    #root {
+        max-width: 450px;
     }
-    img{
+
+    img {
         margin-top: .2em;
     }
+
     .information {
-    padding: 0  ;
-    padding-top: 1.5em;
+        padding: 0;
+        padding-top: 1.5em;
     }
+
     main {
-    text-align: start;
-    padding: 1.5em 0;
-    /* background-color: red; */
+        text-align: start;
+        padding: 1.5em 0;
     }
 
     footer {
-    padding: 0em;
+        padding: 0em;
     }
+
     .btn {
-    display: flex;
-    gap: 1.5em;
+        display: flex;
+        gap: 1.5em;
     }
-    
+
     .alike-btn {
-    width: 200px;
-    height: 50px;
-    min-width: 120px;
-    min-height: 40px;
+        width: 200px;
+        height: 50px;
+        min-width: 120px;
+        min-height: 40px;
+    }
+}
+
+@media(min-width:765px) {
+    #root {
+        height:100%;
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        
+    }
+
+    header h1 {
+        font-size:3.25rem;
+        letter-spacing: 1px;
+        padding: 0;
+    }
+
+    header #job {
+        font-size: 1.65rem;
+        padding: 0;
+    }
+
+    header #email {
+        font-size: 1.25rem;
+        padding: 0;
+    }
+
+    img {
+        margin-top: 0;
+        width: 100%;
+
+    }
+
+    .information {
+        padding: 1em 1.25em .5em 1.25em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main {
+        text-align: start;
+        padding: 2.5em ;
+    }
+
+    main h2 {
+        font-size: 2.25rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+    }
+
+    main p {
+        font-size: 1.6rem;
+        color: #DCDCDC;
+        line-height: 1.65em;
+        letter-spacing: .5px;
+    }
+
+    footer {
+        background-color: #161619;
+        height: 7rem;
+        padding: 0;
+    }
+
+    .sicon {
+        font-size: 3rem;
+    }
+
+    .btn {
+        display: flex;
+        gap: 0;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .alike-btn {
+        width: 170px;
+        height: 50px;
     }
 }
